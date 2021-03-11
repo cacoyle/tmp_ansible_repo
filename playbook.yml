@@ -1,0 +1,13 @@
+---
+- name: Test Playbook
+  hosts: localhost
+  gather_facts: true
+  collections:
+    - devsec.hardening
+  tasks:
+    - import_role:
+        name: os_hardening
+
+    - debug:
+        msg:
+          "testing"
