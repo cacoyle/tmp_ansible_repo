@@ -1,6 +1,5 @@
 ---
 - name: Test Playbook
-  hosts: localhost
   gather_facts: true
   collections:
     - devsec.hardening
